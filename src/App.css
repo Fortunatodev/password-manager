@@ -1,0 +1,352 @@
+@import 'sweetalert2/dist/sweetalert2.css';
+
+.valid-password-check {
+  color: #aeffb6;
+}
+
+.invalid-password-check {
+  color: #f58989;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  align-items: center;
+  background-color: #272a37;
+  color: #ffff;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-weight: 700;
+  min-height: 100vh;
+}
+
+.dark .App-header {
+  background-color: #1e1e1e;
+}
+
+.App button {
+  background-color: #3590f5;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  height: 55px;
+  margin-top: 50px;
+  padding: 10px 20px;
+  transition: all 0.5s ease-in;
+  width: 256px;
+}
+
+.dark .App button {
+  background-color: #282c34;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.darkmode {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  padding: 10px;
+}
+
+.toggle-button {
+  background-color: #555;
+  border-radius: 20px;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  height: 40px;
+  position: relative;
+  width: 70px;
+}
+
+
+.toggle-ball {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 30px;
+  left: 5px;
+  position: absolute;
+  top: 5px;
+  transition: transform 0.3s;
+  width: 30px;
+}
+
+.dark-mode .toggle-button {
+  background-color: #333;
+}
+
+.dark-mode .toggle-ball {
+  background-color: #555;
+  transform: translateX(40px);
+
+  /* Mover a bola para o lado escuro inicialmente */
+}
+
+.move-ball-animation {
+  transform: translateX(30px);
+
+  /* Mover a bola para o lado escuro quando dark mode estiver ativado */
+}
+
+input {
+  background-color: #808080;
+  border: 1px;
+  border-radius: 5px;
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+
+.checkBoxAlert {
+  font-size: 15px;
+}
+
+span {
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+#clean {
+  background-color: #3187e7;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 0.5s ease-in;
+}
+
+#clean:hover {
+  background-color: #1534bc;
+  transition: all 0.5s ease-in;
+}
+
+#href {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-color: #1534bc;
+  font-size: 18px;
+  transition: all 0.5s ease-in;
+}
+
+strong {
+  color: #3187e7;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+hr {
+  border: 1px solid #cacaca;
+  border-radius: 10px;
+  margin-bottom: 150px;
+  margin-top: 50px;
+  width: 291px;
+}
+
+.checkBoxAlert {
+  color: #838383;
+  font-size: 26px;
+}
+
+#check {
+  opacity: 0;
+}
+
+#checkbox {
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+  transition: all 0.5s ease-in;
+}
+
+#checkbox:hover {
+  font-size: 45px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-top: 20px;
+  transition: all 0.5s ease-in;
+}
+
+#validacao p {
+  display: flex;
+}
+
+form {
+  background: #1e2029;
+  border-radius: 20px;
+  display: flex;
+  height: 500px;
+  margin-top: 10px;
+  width: 1000px;
+}
+
+#validacao {
+  background: #1e1e1e;
+  border-radius: 10px;
+  font-size: 12px;
+  height: 150px;
+  justify-content: center;
+  margin: auto;
+  margin-left: 150px;
+  margin-right: 20px;
+  padding: 50px;
+  width: 220px;
+}
+
+#register {
+  width: 211px;
+}
+
+#cancel {
+  background: 0;
+  border: 0;
+  color: #3590f5;
+  font-size: 15px;
+  height: 0;
+  margin-right: 150px;
+  padding: 0;
+  width: 100px;
+}
+
+#password-input {
+  background: 0;
+  border: 0;
+  font-size: 20px;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  width: 0;
+}
+
+.invalid-password-check {
+  align-items: center;
+  display: flex;
+  height: 16px;
+  text-align: center;
+  width: 204px;
+}
+
+h1 {
+  text-align: center;
+}
+
+h1 strong {
+  line-height: 0;
+  text-align: center;
+}
+
+h1 span {
+  line-height: normal;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.form {
+  color: #8d8d8d;
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 20px;
+  margin-top: 100px;
+  text-align: start;
+}
+
+/* Posicionar os campos de login e senha lado a lado */
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.login {
+  display: flex;
+  gap: 62px;
+}
+
+.password-input {
+  position: relative;
+}
+
+.password-input input {
+
+  /* Estilos do input de senha */
+  background-color: #808080;
+  border: 1px;
+  border-radius: 5px;
+  display: flex;
+  font-size: 15px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.password-input button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  left: 170px;
+
+  /* Estilos do botão "Mostrar Senha" */
+  position: absolute;
+  top: 15%;
+  transform: translateY(-50%);
+}
+
+.form-actions {
+  margin-top: 70px;
+}
+
+li {
+  font-size: 25px;
+  list-style-type: none;
+  text-decoration: none;
+
+}
+
+#href {
+  color: #3590f5;
+  font-size: 32px;
+  font-weight: 700;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#href:hover {
+  color: #2066b7;
+  font-size: 36px;
+}
+
+.card-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  justify-items: center;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  width: 650px;
+}
+
+.card {
+  background: #1e2029;
+  border-radius: 5px;
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+  max-width: 300px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
