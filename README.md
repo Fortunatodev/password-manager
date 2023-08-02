@@ -37,7 +37,7 @@ O Password Manager é um aplicativo para ajudar você a gerenciar suas senhas co
 
 
 <p align="center">
-  <img alt="projeto Password Manager" src="https://i.ibb.co/82t9V0t/Captura-de-tela-de-2023-08-02-02-19-03.png" width="100%">
+  <img alt="projeto Password Manager" src="https://i.ibb.co/bQVpSMP/Captura-de-tela-de-2023-08-02-02-22-10.png" width="100%">
 </p>
 
 ## 🔖 Layout
