@@ -1,4 +1,4 @@
-<h1 align="center">🔐 Password Manager🔐 </h1>
+<h1 align="center">🔐 Password Manager 🔐 </h1>
 
 <p align="center">
     Password Manager é um aplicativo desenvolvido com React, TypeScript, Jest e Vue para gerenciar suas senhas com segurança.🔐 <br/>
